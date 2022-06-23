@@ -16,6 +16,10 @@
 
 #include QMK_KEYBOARD_H
 #include "muse.h"
+#define KC_COPY LCTL(KC_C)
+#define KC_CUT LCTL(KC_X)
+#define KC_PASTE LCTL(KC_V)
+#define KC_FIND LCTL(KC_F)
 
 enum preonic_layers {
   _QWERTY,
