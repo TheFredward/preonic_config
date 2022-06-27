@@ -110,9 +110,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * |------+------+------+------+------+-------------+------+------+------+------+------|
  * |   ~  |   !  |   @  |   #  |   $  |  %   |   ^  |   &  |  *   |   (  |   )  | Del  |
  * |------+------+------+------+------+-------------+------+------+------+------+------|
- * | Del  |  F1  |  F2  |  F3  | Find |  F5  |  F6  |   _  |   +  |   {  |   }  |  |
+ * | Del  |      |      |      | Find |      |      |   _  |   +  |   {  |   }  |  |
  * |------+------+------+------+------+------|------+------+------+------+------+------|
- * | Shift|  F7  | CUT  | COPY |PASTE |  F11 |  F12 |ISO ~ |ISO | | Home | End  |      |
+ * | Shift|    | CUT  | COPY |PASTE |        |      |ISO ~ |ISO | | Home | End  |      |
  * |------+------+------+------+------+------+------+------+------+------+------+------|
  * |      |      |      |      |      |             |      | Next | Vol- | Vol+ | Play |
  * `-----------------------------------------------------------------------------------'
@@ -120,8 +120,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 [_LOWER] = LAYOUT_preonic_grid(
   RGB_MODE_FORWARD,RGB_MODE_REVERSE,RGB_SAI,RGB_VAI,RGB_HUI,RGB_MODE_PLAIN,RGB_MODE_GRADIENT, RGB_MODE_KNIGHT, RGB_MODE_BREATHE, RGB_MODE_XMAS, RGB_TOG, KC_BSPC,
   KC_TILD, KC_EXLM, KC_AT,   KC_HASH, KC_DLR,KC_PERC,KC_CIRC ,KC_AMPR , KC_ASTR, KC_LPRN, KC_RPRN, KC_DEL,
-  KC_DEL,  KC_F1,   KC_F2,   KC_F3,   KC_FIND,   KC_F5,   KC_F6,   KC_UNDS, KC_PLUS, KC_LCBR, KC_RCBR, KC_PIPE,
-  KC_LSFT, KC_F7,   KC_CUT,  KC_COPY, KC_PASTE,  KC_F11,  KC_F12,S(KC_NUHS),S(KC_NUBS),KC_HOME, KC_END, _______,
+  KC_DEL,  _______,   _______,   _______,   KC_FIND,   _______,   _______,   KC_UNDS, KC_PLUS, KC_LCBR, KC_RCBR, KC_PIPE,
+  KC_LSFT, _______,   KC_CUT,  KC_COPY, KC_PASTE,  _______,  _______,S(KC_NUHS),S(KC_NUBS),KC_HOME, KC_END, _______,
   _______, _______, _______, _______, _______, _______, _______, _______, KC_MNXT, KC_VOLD, KC_VOLU, KC_MPLY
 ),
 
@@ -133,7 +133,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * |------+------+------+------+------+-------------+------+------+------+------+------|
  * | Del  |  F1  |  F2  |  F3  |  F4  |  F5  |  F6  |   -  |   =  |   [  |   ]  |  \   |
  * |------+------+------+------+------+------|------+------+------+------+------+------|
- * |      |  F7  |  F8   |  F9  | F10  |  F11 |  F12 |ISO # |ISO / | Pg Up| Pg Dn|      |
+ * |      |  F7  |  F8  |  F9  | F10  |  F11 |  F12 |ISO # |ISO / | Pg Up| Pg Dn|      |
  * |------+------+------+------+------+------+------+------+------+------+------+------|
  * |      |      |      |      |      |             |      | Next | Vol- | Vol+ | Play |
  * `-----------------------------------------------------------------------------------'
