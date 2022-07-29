@@ -21,7 +21,7 @@
 #define KC_PASTE LCTL(KC_V)
 #define KC_FIND LCTL(KC_F)
 #define KC_ALL LCTL(KC_A)
-#define AL_TAB KC_LALT(KC_TAB)
+
 
 //Declerations for Tap keys
 enum {
@@ -124,11 +124,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * |------+------+------+------+------+-------------+------+------+------+------+------|
  * |   ~  |   !  |   @  |   #  |   $  |  %   |   ^  |   &  |  *   |   (  |   )  | Del  |
  * |------+------+------+------+------+-------------+------+------+------+------+------|
- * | Del  | S_ALL|      |      | Find |      |      |   _  |   +  |   {  |   }  |  |   |  
+ * | Del  | S_ALL|      |      | Find |      |      |   _  |   +  |   {  |   }  |  |   |
  * |------+------+------+------+------+------|------+------+------+------+------+------|
  * | Shift|    | CUT  | COPY |PASTE |        |      |ISO ~ |ISO | | Home | End  |      |
  * |------+------+------+------+------+------+------+------+------+------+------+------|
- * | Al+Tb|      |      |      |      |             |      | Next | Vol- | Vol+ | Play |
+ * | |      |      |      |      |             |      | Next | Vol- | Vol+ | Play |
  * `-----------------------------------------------------------------------------------'
  */
 [_LOWER] = LAYOUT_preonic_grid(
@@ -136,7 +136,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   KC_TILD, KC_EXLM, KC_AT,   KC_HASH, KC_DLR,KC_PERC,KC_CIRC ,KC_AMPR , KC_ASTR, KC_LPRN, KC_RPRN, KC_DEL,
   KC_DEL,  KC_ALL ,   _______,   _______,   KC_FIND,   _______,   _______,   KC_UNDS, KC_PLUS, KC_LCBR, KC_RCBR, KC_PIPE,
   KC_LSFT, _______,   KC_CUT,  KC_COPY, KC_PASTE,  _______,  _______,S(KC_NUHS),S(KC_NUBS),KC_HOME, KC_END, _______,
-  AL_TAB, _______, _______, _______, _______, _______, _______, _______, KC_MNXT, KC_VOLD, KC_VOLU, KC_MPLY
+  _______, _______, _______, _______, _______, _______, _______, _______, KC_MNXT, KC_VOLD, KC_VOLU, KC_MPLY
 ),
 
 /* Raise
