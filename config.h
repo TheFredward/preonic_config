@@ -25,14 +25,6 @@
 #endif
 
 #define MUSIC_MASK (keycode != KC_NO)
-//Define max Tapping term between taps (ms)
-#define TAPPING_TERM 175
-//Color controls
-#define RGBLIGHT_HUE_STEP 5
-#define RGBLIGHT_SAT_STEP 17
-#define RGBLIGHT_VAL_STEP 5
-#define RGBLIGHT_LIMIT_VAL 255
-#define RGBLIGHT_DEFAULT_HUE 21
 
 /*
  * MIDI options
