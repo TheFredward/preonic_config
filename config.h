@@ -13,7 +13,9 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-
+//Delay in ms before next key needs to be registered
+#define TAPPING_TERM 500
+#define LEADER_TIMEOUT 500
 #pragma once
 
 #ifdef AUDIO_ENABLE
